@@ -1,0 +1,22 @@
+{
+  "name": "yoadans-coffee-hub",
+  "version": "1.0.0",
+  "description": "Welcome to **YOADAN's Coffee Hub**, your go-to destination for premium coffee!",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nazu1776/yoadans-coffee-hub.git"
+  },
+  "author": "Nazrawi Asrat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nazu1776/yoadans-coffee-hub/issues"
+  },
+  "homepage": "https://github.com/Nazu1776/yoadans-coffee-hub#readme"
+}
