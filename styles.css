@@ -275,3 +275,8 @@ footer .legal-links a:hover {
     color: #ff9900;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
