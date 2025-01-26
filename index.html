@@ -1,155 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>YOADAN's Coffee Hub</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f4f0;
-            color: #333;
-        }
-        header {
-            background-color: #6f4e37;
-            color: white;
-            padding: 20px 10px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        .products-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-        .product-card {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.2s;
-        }
-        .product-card:hover {
-            transform: scale(1.05);
-        }
-        .product-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .product-card h3 {
-            margin: 10px;
-        }
-        .product-card p {
-            margin: 10px;
-            color: #6f4e37;
-        }
-        footer {
-            background-color: #6f4e37;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+    <!-- Header Section -->
     <header>
-        <h1>Welcome to YOADAN's Coffee Hub</h1>
-        <p>Where every sip brings you joy!</p>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="YOADAN's Coffee Hub">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="cta-btn">Order Now</button>
+        </nav>
     </header>
 
-    <main>
-        <section class="products-container">
-            <div class="product-card">
-                <img src="https://via.placeholder.com/250" alt="Affogato">
-                <h3>Affogato</h3>
-                <p>Price: 150 Birr</p>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/250" alt="Black Coffee">
-                <h3>Black Coffee</h3>
-                <p>Price: 80 Birr</p>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/250" alt="Cappuccino">
-                <h3>Cappuccino</h3>
-                <p>Price: 120 Birr</p>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/250" alt="Chai Latte">
-                <h3>Chai Latte</h3>
-                <p>Price: 100 Birr</p>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/250" alt="Coffee">
-                <h3>Coffee</h3>
-                <p>Price: 90 Birr</p>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/250" alt="Espresso">
-                <h3>Espresso</h3>
-                <p>Price: 100 Birr</p>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/250" alt="Green Tea">
-                <h3>Green Tea</h3>
-                <p>Price: 80 Birr</p>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/250" alt="Herbal Tea">
-                <h3>Herbal Tea</h3>
-                <p>Price: 90 Birr</p>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/250" alt="Iced Coffee">
-                <h3>Iced Coffee</h3>
-                <p>Price: 110 Birr</p>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/250" alt="Iced Tea">
-                <h3>Iced Tea</h3>
-                <p>Price: 90 Birr</p>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/250" alt="Latte">
-                <h3>Latte</h3>
-                <p>Price: 120 Birr</p>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/250" alt="Macchiato">
-                <h3>Macchiato</h3>
-                <p>Price: 140 Birr</p>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/250" alt="Milk">
-                <h3>Milk</h3>
-                <p>Price: 80 Birr</p>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/250" alt="Mocha">
-                <h3>Mocha</h3>
-                <p>Price: 130 Birr</p>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/250" alt="Tea">
-                <h3>Tea</h3>
-                <p>Price: 80 Birr</p>
-            </div>
-        </section>
-    </main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Experience the Best Coffee in Town</h1>
+            <p>Freshly brewed, sustainably sourced, and always aromatic.</p>
+            <a href="#products" class="cta-btn">Shop Coffee</a>
+        </div>
+        <img src="hero-image.jpg" alt="Coffee beans or a coffee cup" class="hero-image">
+    </section>
 
+    <!-- Product Showcase -->
+    <section id="products" class="product-showcase">
+        <h2>Our Best Sellers</h2>
+        <div class="product-cards">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <img src="affogato.jpg" alt="Affogato">
+                <h3>Affogato</h3>
+                <p>A delightful dessert with coffee and vanilla ice cream.</p>
+                <span>200 ETB</span>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="black-coffee.jpg" alt="Black Coffee">
+                <h3>Black Coffee</h3>
+                <p>A rich and pure coffee with no additives.</p>
+                <span>120 ETB</span>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="cappuccino.jpg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>A creamy coffee topped with frothy milk.</p>
+                <span>180 ETB</span>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <img src="chai-latte.jpg" alt="Chai Latte">
+                <h3>Chai Latte</h3>
+                <p>A spiced tea mixed with steamed milk.</p>
+                <span>160 ETB</span>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <img src="coffee.jpg" alt="Coffee">
+                <h3>Coffee</h3>
+                <p>Perfectly brewed coffee to start your day.</p>
+                <span>150 ETB</span>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <img src="espresso.jpg" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>A bold and concentrated shot of coffee.</p>
+                <span>130 ETB</span>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Product Card 7 -->
+            <div class="product-card">
+                <img src="green-tea.jpg" alt="Green Tea">
+                <h3>Green Tea</h3>
+                <p>Freshly brewed green tea with a natural taste.</p>
+                <span>100 ETB</span>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Product Card 8 -->
+            <div class="product-card">
+                <img src="herbal-tea.jpg" alt="Herbal Tea">
+                <h3>Herbal Tea</h3>
+                <p>A soothing blend of herbs for relaxation.</p>
+                <span>110 ETB</span>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Product Card 9 -->
+            <div class="product-card">
+                <img src="iced-coffee.jpg" alt="Iced Coffee">
+                <h3>Iced Coffee</h3>
+                <p>A refreshing cold coffee to beat the heat.</p>
+                <span>180 ETB</span>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Product Card 10 -->
+            <div class="product-card">
+                <img src="iced-tea.jpg" alt="Iced Tea">
+                <h3>Iced Tea</h3>
+                <p>A chilled and refreshing tea beverage.</p>
+                <span>150 ETB</span>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Product Card 11 -->
+            <div class="product-card">
+                <img src="latte.jpg" alt="Latte">
+                <h3>Latte</h3>
+                <p>A smooth coffee with steamed milk and a touch of foam.</p>
+                <span>170 ETB</span>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Product Card 12 -->
+            <div class="product-card">
+                <img src="macchiato.jpg" alt="Macchiato">
+                <h3>Macchiato</h3>
+                <p>A shot of espresso with a dash of steamed milk.</p>
+                <span>140 ETB</span>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Product Card 13 -->
+            <div class="product-card">
+                <img src="milk.jpg" alt="Milk">
+                <h3>Milk</h3>
+                <p>Fresh milk for your coffee or tea.</p>
+                <span>80 ETB</span>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Product Card 14 -->
+            <div class="product-card">
+                <img src="mocha.jpg" alt="Mocha">
+                <h3>Mocha</h3>
+                <p>A delicious combination of chocolate and coffee.</p>
+                <span>200 ETB</span>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Product Card 15 -->
+            <div class="product-card">
+                <img src="tea.jpg" alt="Tea">
+                <h3>Tea</h3>
+                <p>Freshly brewed tea with aromatic flavors.</p>
+                <span>120 ETB</span>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>Our Story</h2>
+            <p>At YOADAN's Coffee Hub, we bring you the finest coffee sourced from sustainable farms around the world. Our passion for great coffee drives everything we do, from hand-selecting the beans to roasting them to perfection.</p>
+        </div>
+        <img src="about-image.jpg" alt="Behind the scenes of coffee making" class="about-image">
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <p>"Best coffee I've ever tasted! So fresh and aromatic."</p>
+                <h4>Jane Doe</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Absolutely love the Colombian Roast! It's my go-to morning brew."</p>
+                <h4>John Smith</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="cta">
+        <h2>Join the Coffee Club!</h2>
+        <p>Get the latest updates and exclusive offers straight to your inbox.</p>
+        <button class="cta-btn">Subscribe Now</button>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 YOADAN's Coffee Hub. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
+            <div class="contact-info">
+                <p>Email: info@yoadanscoffeehub.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </div>
+        </div>
     </footer>
+
 </body>
+
 </html>
 
