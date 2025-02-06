@@ -1,0 +1,371 @@
+:root {
+    --color-main: #3E2723; /* Coffee brown */
+    --color-main-light: #5D4037; /* Lighter coffee brown */
+    --color-main-dark: #2C170B; /* Dark coffee brown */
+    --color-footer-text: #BDBDBD; /* Light grey */
+    --color-accent: #FF5722; /* Accent orange */
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-width: 370px;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5F5; /* Light grey background */
+    box-sizing: inherit;
+    padding: 2em;
+}
+
+section {
+    background-color: #FFF;
+    margin-top: -6.25em;
+}
+
+.tertiary-heading {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: var(--color-main);
+}
+
+.quaternary-heading {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: var(--color-main-light);
+}
+
+.paragraph {
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.section {
+    padding-top: 10em;
+}
+
+/* ============== BUTTONS ============ */
+.btn {
+    position: relative;
+    border: none;
+    padding: .8em 2em;
+    color: #FFF;
+    font-weight: 700;
+    font-size: .9em;
+    font-family: inherit;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    text-decoration: none;
+    background-color: var(--color-main);
+    transition: all .2s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--color-accent);
+}
+
+.btn-cta {
+    background-color: var(--color-accent);
+}
+
+.btn-cta:hover {
+    background-color: var(--color-main-dark);
+}
+
+.btn-other {
+    background-color: #000;
+}
+
+.btn-other:hover {
+    background-color: #111;
+}
+
+.btn:active {
+    top: 1px;
+}
+
+/* ============== NAV ============ */
+#nav-bar {
+    height: 3.5em;
+    width: 100%;
+    display: flex;
+    padding: 1em 2em;
+    position: fixed;
+    left: 0;
+    z-index: 999;
+    transition: all .4s ease-in-out;
+    background-color: var(--color-main);
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    margin-top: 2.5em;
+    text-transform: uppercase;
+    position: relative;
+    right: 3.125em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-right: 1.875em;
+    font-weight: 300;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #FFF;
+    transition: all .2s;
+}
+
+.nav-link:hover {
+    color: var(--color-accent);
+}
+
+#header-img {
+    height: 7.5em;
+    position: absolute;
+    top: 0;
+    left: 6em;
+}
+
+/* ============== HEADER ============ */
+#header {
+    height: 97vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.3)),
+        url('https://example.com/your-coffee-image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #FFF;
+    text-shadow: 0 1px 10px #000;
+}
+
+#header-container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    max-width: 56.25em;
+    height: 31.25em;
+    margin-top: 18.75em;
+}
+
+.secondary-heading {
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+.header-lead {
+    font-weight: 300;
+    padding: 0 2em;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+/* ============== COFFEE TYPE SECTION ============ */
+#coffee-types-section {
+    padding: 5em 0;
+}
+
+.section-description {
+    text-align: center;
+    max-width: 56.25em;
+    margin: 0 auto 1.875em;
+}
+
+#coffee-types-section .col-1-of-2 {
+    padding: 0 2em;
+}
+
+/* ============== PRICING ============ */
+.card {
+    position: relative;
+    height: 38.75em;
+    background-color: #FFF;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.top-card {
+    background-color: #F7F7F7;
+    padding-bottom: 1.5em;
+}
+
+.card-heading {
+    font-size: 1.75em;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--color-main);
+    display: flex;
+    justify-content: center;
+}
+
+.card-details {
+    padding: 1.25em;
+}
+
+.card ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card ul li {
+    text-align: center;
+    font-size: .9375em;
+    padding: .625em;
+}
+
+.card ul li:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.068);
+}
+
+.card-price-box {
+    text-align: center;
+}
+
+.card-price-month {
+    font-size: 0.875em;
+    text-transform: uppercase;
+}
+
+.card-price-value {
+    font-size: 3.75em;
+    font-weight: 300;
+}
+
+.most-popular {
+    background-color: var(--color-accent);
+    color: #FFF;
+    font-size: 1.2em;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.popular {
+    width: 100%;
+    height: 3.125em;
+    margin-bottom: 1.25em;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card .btn-container .btn:hover {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ============== FOOTER ============ */
+footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 5em 5em;
+}
+
+.footer-heading {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.footer-paragraph {
+    font-weight: 100;
+    font-size: .8em;
+    line-height: 1.5em;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li a.footer-link {
+    color: #BDBDBD;
+}
+
+.footer-link {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: .9em;
+}
+
+.footer-link:hover {
+    color: var(--color-accent);
+}
+
+.footer-logo-container {
+    margin: 0 auto;
+}
+
+#footer-img {
+    height: 9.375em;
+}
+
+/* ============== GRID ============ */
+.row {
+    max-width: 90em;
+    margin: 0 auto;
+    display: flex;
+}
+
+.col-1-of-2 {
+    width: calc((100% - 3.75em) / 2);
+}
+
+.col-1-of-3 {
+    width: calc((100% - 2 * 3.75em) / 3);
+}
+
+.clear-fix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class^="col-"] {
+    float: left;
+}
+
+[class^="col-"]:not(:last-child) {
+    margin-right: 3.75em;
+}
+
+/* ============== MEDIA QUERIES ============ */
+@media only screen and (max-width: 100em) {  /* 1600px */
+    /* Styles for large screens */
+}
+
+@media only screen and (max-width: 68.75em) {  /* 1000px */
+    .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
